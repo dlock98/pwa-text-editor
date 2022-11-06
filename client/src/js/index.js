@@ -3,6 +3,13 @@ import { Workbox } from 'workbox-window';
  import './database';
  import '../css/style.css';
 
+// IMPORT IMAGES
+import Logo from "../images/logo.png";
+
+window.addEventListener('load', function () {
+  document.getElementById('Logo').src = Logo;
+});
+
  const main = document.querySelector('#main');
  main.innerHTML = '';
 
